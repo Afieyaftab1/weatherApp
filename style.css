@@ -50,21 +50,68 @@ body {
     cursor: pointer;
 }
 
-.search button img {
+.ion-icon {
     width: 30px;
 }
 
 .weather-icon {
-    width: 170px;
+    width: 235px;
     margin-top: 30px;
+}
+
+.humidity-image {
+    height: 95px;
+    margin-top: 15px;
+}
+
+.wind-image {
+    height: 105px;
+    margin-top: 15px;
 }
  
 .weather h1 {
-    font-size: 80px;
+    font-size: 53px;
     font-weight: 500px;
 }
 
 .weather h2 {
-    font-size: 45px;
+    font-size: 32px;
     font-weight: 400px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px ;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
 }

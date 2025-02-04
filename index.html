@@ -10,7 +10,10 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter city name" spellcheck="false">
-            <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHlR0hmAfS4p81bmeHXBuGzCTQfpmYgz8wzQ&s" alt=""></button>
+            <button><ion-icon name="search"></ion-icon></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
         </div>
         <div class="weather">
             <img src="https://static.vecteezy.com/system/resources/thumbnails/010/989/526/small_2x/rainy-weather-3d-rendering-isolated-on-transparent-background-ui-ux-icon-design-web-and-app-trend-png.png" alt="" class="weather-icon">
@@ -18,21 +21,30 @@
             <h2 class="city">sanghar</h2>
             <div class="details">
                 <div class="col">
-                    <img src="https://c8.alamy.com/comp/PT03N5/sunny-cloud-daylight-weather-forecast-vector-icon-symbol-graphic-logo-design-template-PT03N5.jpg" alt="">
+                    <img src="https://fluentweather.com/rw_common/images/Swish.png" alt="" class="humidity-image">
                     <div>
                         <p class="humidity">50%</p>
                 <p>Humidity</p> 
                     </div>
                 </div>
                 <div class="col">
-                    <img src="https://img.freepik.com/premium-vector/button-icon-weather-mobile-app-website-snow-weather-forecast-cloud-snowflakes-3d_313242-1441.jpg" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/966/966390.png" alt="" class="wind-image">
                     <div>
-                        <p class="wind">50%</p>
+                        <p class="wind">15 km/h</p>
                 <p>wind speed</p> 
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
 </body>
+
+<script src="first.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
 </html>
