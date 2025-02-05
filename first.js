@@ -1,5 +1,5 @@
-const apiKey = "23a56a86bb0a1334ca8704f9f774f96b"
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=sanghar";
+const apiKey = "23a56a86bb0a1334ca8704f9f774f96b";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
@@ -9,8 +9,8 @@ async function checkWeather(city){
 
     if(response.status == 404){
         document.querySelector(".error").style.desplay = "block";
-        document.querySelector(".weather").style.display = "none"
     }else{
+  
 
   
      
@@ -30,7 +30,7 @@ async function checkWeather(city){
         weatherIcon.src = "images/clear.png";
     }
     else if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "images/rain";
+        weatherIcon.src = "images/rain.png";
     }
     else if(data.weather[0].main == "Drizzle"){
         weatherIcon.src = "images/drizzle.png";
@@ -40,9 +40,12 @@ async function checkWeather(city){
     }
     Document.querySelector(".weather").style.display = "block"; 
     document.querySelector(".error").style.display = "none";
-}
+
 }
 
-searchBtn.addEventListener('click', ()=>{
+
+}
+
+searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 })
